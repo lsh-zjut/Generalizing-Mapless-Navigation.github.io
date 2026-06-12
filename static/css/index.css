@@ -120,7 +120,7 @@ body {
 
 .teaser-gif {
   display: block;
-  width: 140%;
+  width: min(92vw, 1400px);
   max-width: none;
   height: auto;
   flex: none;
