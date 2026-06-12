@@ -402,14 +402,22 @@ body {
 
 .media-card-irsim img {
   width: 100%;
-  min-height: 360px;
+  min-height: 280px;
   object-fit: cover;
-  box-shadow: none;
+  border-radius: var(--border-radius-lg);
+  box-shadow: var(--shadow-lg);
 }
 
 .media-grid-gazebo {
   margin-top: 0.5rem;
   gap: 1.4rem;
+}
+
+.media-grid-gazebo-stack {
+  grid-template-columns: 1fr;
+  max-width: 920px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .media-card-gazebo {
@@ -420,7 +428,8 @@ body {
   width: 100%;
   min-height: 460px;
   object-fit: cover;
-  box-shadow: none;
+  border-radius: var(--border-radius-lg);
+  box-shadow: var(--shadow-lg);
 }
 
 .media-card {
@@ -436,11 +445,18 @@ body {
   border: none;
   box-shadow: none;
   border-radius: 0;
+  margin-bottom: 0;
 }
 
 .media-card-plain img {
-  background: transparent;
-  border-radius: 0;
+  background: transparent !important;
+}
+
+.media-grid-irsim .media-card,
+.media-grid-gazebo .media-card {
+  background: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
 }
 
 .media-card-large {
