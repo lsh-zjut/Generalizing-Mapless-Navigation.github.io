@@ -355,6 +355,64 @@ body {
   margin-bottom: 1.5rem;
 }
 
+.media-figure,
+.media-card {
+  margin: 0 0 1.75rem;
+}
+
+.media-figure img,
+.media-card img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: var(--border-radius-lg);
+  box-shadow: var(--shadow-lg);
+  background: var(--background-primary);
+}
+
+.media-caption {
+  margin-top: 0.85rem;
+  text-align: center;
+  font-size: 0.95rem;
+  color: var(--text-secondary);
+}
+
+.contribution-list {
+  margin: 1.5rem 0 0;
+  padding-left: 1.25rem;
+  color: var(--text-secondary);
+}
+
+.contribution-list li {
+  margin-bottom: 0.9rem;
+}
+
+.media-grid {
+  display: grid;
+  gap: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.media-grid-two {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.media-grid-three {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.media-card {
+  background: var(--background-primary);
+  border: 1px solid var(--border-color);
+  border-radius: var(--border-radius-lg);
+  box-shadow: var(--shadow-md);
+  padding: 1rem;
+}
+
+.media-card-large {
+  margin-top: 1rem;
+}
+
 /* Footer Improvements */
 .footer {
   background: var(--background-secondary);
@@ -671,6 +729,11 @@ code {
   
   .content.has-text-justified {
     font-size: 1rem;
+  }
+
+  .media-grid-two,
+  .media-grid-three {
+    grid-template-columns: 1fr;
   }
 }
 

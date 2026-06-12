@@ -85,12 +85,126 @@
         <div class="content has-text-justified">
           <p>
            While pretrained visual navigation models provide useful waypoint guidance for mapless navigation, their outputs are often coarse and geometry agnostic. In particular, they do not explicitly account for local obstacles, robot motion constraints, or command feasibility. To bridge this gap, this paper proposes a hierarchical modular navigation framework that combines a general navigation model with physically grounded local planning. The framework contains three core components: (1) a vision-based waypoint sub-goal generator that predicts waypoint sequences; (2) a plug-and-play local planner that performs collision checking and smooth trajectory selection; and (3) a control execution and recovery module that supports closed-loop robustness. Notably, the system operates entirely without a global map or global localization. Extensive evaluations across IR-Sim, Gazebo, and real-world platforms show encouraging improvements in the tested mapless navigation tasks. The results indicate that waypoint guidance, local geometry, and robot motion constraints can be connected through a modular interface for practical deployment.
+          </p>
         </div>
       </div>
     </div>
   </div>
 </section>
 <!-- End paper abstract -->
+
+<!-- System overview -->
+<section class="section">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3 has-text-centered">System Overview</h2>
+
+        <figure class="media-figure">
+          <img
+            src="static/images/framework.svg"
+            alt="System overview framework"
+            loading="lazy"
+          >
+          <figcaption class="media-caption">
+            Figure 1. Overview of the proposed mapless navigation system.
+          </figcaption>
+        </figure>
+
+        <div class="content has-text-justified">
+          <ul class="contribution-list">
+            <li>We propose a hierarchical mapless navigation framework that combines a general navigation model with a physically grounded local planner.</li>
+            <li>We introduce a modular interface that connects waypoint prediction, collision-aware trajectory selection, and control execution without relying on a global map.</li>
+            <li>We validate the framework across IR-Sim, Gazebo, and real-world robot platforms to demonstrate robust obstacle avoidance in diverse environments.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End system overview -->
+
+<!-- Simulation results -->
+<section class="section hero is-light">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3 has-text-centered">Simulation Results</h2>
+
+        <div class="media-grid media-grid-two">
+          <figure class="media-card">
+            <img
+              src="static/images/GMN.gif"
+              alt="IR-Sim simulation result"
+              loading="lazy"
+            >
+            <figcaption class="media-caption">IR-Sim simulation result.</figcaption>
+          </figure>
+
+          <figure class="media-card">
+            <img
+              src="static/images/carousel1.jpg"
+              alt="Gazebo simulation result"
+              loading="lazy"
+            >
+            <figcaption class="media-caption">Gazebo simulation result.</figcaption>
+          </figure>
+        </div>
+
+        <figure class="media-card media-card-large">
+          <img
+            src="static/images/GMN.gif"
+            alt="Gazebo simulation GIF"
+            loading="lazy"
+          >
+          <figcaption class="media-caption">Gazebo simulation GIF.</figcaption>
+        </figure>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End simulation results -->
+
+<!-- Real-world experiments -->
+<section class="section">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3 has-text-centered">Real-World Experiments</h2>
+
+        <div class="media-grid media-grid-three">
+          <figure class="media-card">
+            <img
+              src="static/images/GMN.gif"
+              alt="Wheeled robot real-world experiment"
+              loading="lazy"
+            >
+            <figcaption class="media-caption">Wheeled robot.</figcaption>
+          </figure>
+
+          <figure class="media-card">
+            <img
+              src="static/images/GMN.gif"
+              alt="Quadruped robot real-world experiment"
+              loading="lazy"
+            >
+            <figcaption class="media-caption">Quadruped robot.</figcaption>
+          </figure>
+
+          <figure class="media-card">
+            <img
+              src="static/images/GMN.gif"
+              alt="Humanoid robot real-world experiment"
+              loading="lazy"
+            >
+            <figcaption class="media-caption">Humanoid robot.</figcaption>
+          </figure>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End real-world experiments -->
 
 <!-- Teaser video -->
 <section class="hero teaser">
