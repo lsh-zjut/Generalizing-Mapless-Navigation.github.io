@@ -320,6 +320,17 @@ body {
   border-radius: 2px;
 }
 
+.media-subtitle {
+  font-family: 'Inter', sans-serif !important;
+  font-weight: 700 !important;
+  color: var(--text-primary);
+  margin: 2.25rem 0 1.5rem !important;
+}
+
+.simulation-container {
+  max-width: 1500px;
+}
+
 /* Content Improvements */
 .content.has-text-justified {
   font-size: 1.1rem;
@@ -382,31 +393,34 @@ body {
 }
 
 .media-grid-irsim {
-  gap: 1rem;
+  gap: 1.4rem;
 }
 
 .media-card-irsim {
-  padding: 0.5rem;
+  padding: 0;
 }
 
 .media-card-irsim img {
   width: 100%;
-  min-height: 220px;
+  min-height: 360px;
   object-fit: cover;
+  box-shadow: none;
 }
 
 .media-grid-gazebo {
-  margin-top: 1.5rem;
+  margin-top: 0.5rem;
+  gap: 1.4rem;
 }
 
 .media-card-gazebo {
-  padding: 0.5rem;
+  padding: 0;
 }
 
 .media-card-gazebo img {
   width: 100%;
-  min-height: 260px;
+  min-height: 460px;
   object-fit: cover;
+  box-shadow: none;
 }
 
 .media-card {
@@ -415,6 +429,18 @@ body {
   border-radius: var(--border-radius-lg);
   box-shadow: var(--shadow-md);
   padding: 1rem;
+}
+
+.media-card-plain {
+  background: transparent;
+  border: none;
+  box-shadow: none;
+  border-radius: 0;
+}
+
+.media-card-plain img {
+  background: transparent;
+  border-radius: 0;
 }
 
 .media-card-large {
@@ -744,6 +770,7 @@ code {
     min-height: auto;
   }
 }
+
 
 @media screen and (max-width: 480px) {
   .publication-title {

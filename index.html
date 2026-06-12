@@ -107,7 +107,7 @@
             loading="lazy"
           >
           <figcaption class="media-caption">
-            Figure 1. Overview of the proposed mapless navigation system.
+            The vision-based waypoint generation module predicts waypoints from RGB observations. The local planning module generates feasible and collision-free motion commands from point-cloud observations and robot dynamics. The system also includes feedback and recovery behaviors.
           </figcaption>
         </figure>
 
@@ -126,13 +126,15 @@
 
 <!-- Simulation results -->
 <section class="section hero is-light">
-  <div class="container is-max-desktop">
+  <div class="container is-fluid simulation-container">
     <div class="columns is-centered">
-      <div class="column is-four-fifths">
+      <div class="column is-11-desktop is-full-tablet">
         <h2 class="title is-3 has-text-centered">Simulation Results</h2>
 
+        <h3 class="title is-4 media-subtitle has-text-centered">IR-Sim Simulation</h3>
+
         <div class="media-grid media-grid-three media-grid-irsim">
-          <figure class="media-card media-card-irsim">
+          <figure class="media-card media-card-plain media-card-irsim">
             <img
               src="static/images/irsim1.gif"
               alt="IR-Sim simulation result 1"
@@ -140,7 +142,7 @@
             >
           </figure>
 
-          <figure class="media-card media-card-irsim">
+          <figure class="media-card media-card-plain media-card-irsim">
             <img
               src="static/images/irsim2.gif"
               alt="IR-Sim simulation result 2"
@@ -148,7 +150,7 @@
             >
           </figure>
 
-          <figure class="media-card media-card-irsim">
+          <figure class="media-card media-card-plain media-card-irsim">
             <img
               src="static/images/irsim3.gif"
               alt="IR-Sim simulation result 3"
@@ -156,7 +158,7 @@
             >
           </figure>
 
-          <figure class="media-card media-card-irsim">
+          <figure class="media-card media-card-plain media-card-irsim">
             <img
               src="static/images/irsim4.gif"
               alt="IR-Sim simulation result 4"
@@ -164,7 +166,7 @@
             >
           </figure>
 
-          <figure class="media-card media-card-irsim">
+          <figure class="media-card media-card-plain media-card-irsim">
             <img
               src="static/images/irsim5.gif"
               alt="IR-Sim simulation result 5"
@@ -172,7 +174,7 @@
             >
           </figure>
 
-          <figure class="media-card media-card-irsim">
+          <figure class="media-card media-card-plain media-card-irsim">
             <img
               src="static/images/irsim6.gif"
               alt="IR-Sim simulation result 6"
@@ -181,8 +183,10 @@
           </figure>
         </div>
 
+        <h3 class="title is-4 media-subtitle has-text-centered">Gazebo Simlation</h3>
+
         <div class="media-grid media-grid-two media-grid-gazebo">
-          <figure class="media-card media-card-gazebo">
+          <figure class="media-card media-card-plain media-card-gazebo">
             <img
               src="static/images/gazebo1.gif"
               alt="Gazebo simulation result 1"
@@ -190,7 +194,7 @@
             >
           </figure>
 
-          <figure class="media-card media-card-gazebo">
+          <figure class="media-card media-card-plain media-card-gazebo">
             <img
               src="static/images/gazebo2.gif"
               alt="Gazebo simulation result 2"
@@ -198,7 +202,6 @@
             >
           </figure>
         </div>
-
       </div>
     </div>
   </div>
@@ -246,6 +249,22 @@
 </section>
 <!-- End real-world experiments -->
 
+<!-- Teaser video -->
+<section class="hero teaser">
+  <div class="container is-fluid">
+    <div class="hero-body">
+      <div class="teaser-gif-wrap">
+        <img
+          class="teaser-gif"
+          src="static/images/GMN.gif"
+          alt="Generalizing Mapless Navigation teaser"
+          loading="lazy"
+        >
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End teaser media -->
   </main>
 
   </body>
