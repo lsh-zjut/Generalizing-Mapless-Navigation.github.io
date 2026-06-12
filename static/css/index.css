@@ -432,8 +432,9 @@ body {
 
 .media-figure-gazebo img {
   width: 100%;
-  min-height: 610px;
-  object-fit: cover;
+  height: auto;
+  max-height: 610px;
+  object-fit: contain;
   border-radius: var(--border-radius-lg);
   box-shadow: var(--shadow-lg);
 }
