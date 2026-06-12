@@ -392,15 +392,15 @@ body {
   margin-bottom: 0;
 }
 
+.media-grid .media-figure {
+  margin: 0;
+}
+
 .media-grid-irsim {
   gap: 1.4rem;
 }
 
-.media-card-irsim {
-  padding: 0;
-}
-
-.media-card-irsim img {
+.media-figure-irsim img {
   width: 100%;
   min-height: 280px;
   object-fit: cover;
@@ -420,47 +420,12 @@ body {
   margin-right: auto;
 }
 
-.media-card-gazebo {
-  padding: 0;
-}
-
-.media-card-gazebo img {
+.media-figure-gazebo img {
   width: 100%;
   min-height: 460px;
   object-fit: cover;
   border-radius: var(--border-radius-lg);
   box-shadow: var(--shadow-lg);
-}
-
-.media-card {
-  background: var(--background-primary);
-  border: 1px solid var(--border-color);
-  border-radius: var(--border-radius-lg);
-  box-shadow: var(--shadow-md);
-  padding: 1rem;
-}
-
-.media-card-plain {
-  background: transparent;
-  border: none;
-  box-shadow: none;
-  border-radius: 0;
-  margin-bottom: 0;
-}
-
-.media-card-plain img {
-  background: transparent !important;
-}
-
-.media-grid-irsim .media-card,
-.media-grid-gazebo .media-card {
-  background: transparent !important;
-  border: none !important;
-  box-shadow: none !important;
-}
-
-.media-card-large {
-  margin-top: 1rem;
 }
 
 /* Footer Improvements */
@@ -778,11 +743,11 @@ code {
     grid-template-columns: 1fr;
   }
 
-  .media-card-irsim img {
+  .media-figure-irsim img {
     min-height: auto;
   }
 
-  .media-card-gazebo img {
+  .media-figure-gazebo img {
     min-height: auto;
   }
 }
