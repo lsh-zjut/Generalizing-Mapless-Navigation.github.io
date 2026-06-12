@@ -365,9 +365,10 @@ body {
 }
 
 .experiment-caption {
-  font-size: 1.5rem;
-  font-weight: 700;
-  color: var(--text-primary);
+  font-size: 2rem !important;
+  font-weight: 700 !important;
+  line-height: 1.2;
+  color: var(--text-primary) !important;
 }
 
 .contribution-list {
