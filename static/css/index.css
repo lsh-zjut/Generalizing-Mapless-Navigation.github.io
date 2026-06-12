@@ -112,6 +112,20 @@ body {
   font-family: 'Inter', sans-serif;
 }
 
+.teaser-gif-wrap {
+  display: flex;
+  justify-content: center;
+  overflow: visible;
+}
+
+.teaser-gif {
+  display: block;
+  width: 140%;
+  max-width: none;
+  height: auto;
+  flex: none;
+}
+
 
 /* Publication Content Styling */
 .publication-title {
@@ -649,6 +663,10 @@ code {
   
   .teaser .hero-body {
     padding: 1rem;
+  }
+
+  .teaser-gif {
+    width: 100%;
   }
   
   .content.has-text-justified {
