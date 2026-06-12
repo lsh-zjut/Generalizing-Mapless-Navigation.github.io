@@ -401,6 +401,10 @@ body {
   grid-template-columns: repeat(3, minmax(0, 1fr));
 }
 
+.media-grid-three .media-card {
+  margin-bottom: 0;
+}
+
 .media-card {
   background: var(--background-primary);
   border: 1px solid var(--border-color);
