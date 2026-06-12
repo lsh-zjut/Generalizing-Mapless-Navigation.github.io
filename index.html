@@ -113,9 +113,9 @@
 
         <div class="content has-text-justified">
           <ul class="contribution-list">
-            <li>We propose a hierarchical mapless navigation framework that combines a general navigation model with a physically grounded local planner.</li>
-            <li>We introduce a modular interface that connects waypoint prediction, collision-aware trajectory selection, and control execution without relying on a global map.</li>
-            <li>We validate the framework across IR-Sim, Gazebo, and real-world robot platforms to demonstrate robust obstacle avoidance in diverse environments.</li>
+            <li>A hierarchical navigation framework is developed to connect vision-based waypoint guidance with physically grounded local planning for mapless navigation without prior environmental maps.</li>
+            <li>A plug-and-play mapless execution interface is designed to convert waypoint guidance into dynamically feasible and collision-free local motion trajectories.</li>
+            <li>Simulation and real-world experiments across multiple platforms are conducted to evaluate the framework in obstacle avoidance tasks and to analyze its performance against traditional local planners under matched deployment settings.</li>
           </ul>
         </div>
       </div>
@@ -131,70 +131,74 @@
       <div class="column is-four-fifths">
         <h2 class="title is-3 has-text-centered">Simulation Results</h2>
 
-        <div class="media-grid media-grid-three">
-          <figure class="media-card">
+        <div class="media-grid media-grid-three media-grid-irsim">
+          <figure class="media-card media-card-irsim">
             <img
               src="static/images/irsim1.gif"
               alt="IR-Sim simulation result 1"
               loading="lazy"
             >
-            <figcaption class="media-caption">IR-Sim result 1.</figcaption>
           </figure>
 
-          <figure class="media-card">
+          <figure class="media-card media-card-irsim">
             <img
               src="static/images/irsim2.gif"
               alt="IR-Sim simulation result 2"
               loading="lazy"
             >
-            <figcaption class="media-caption">IR-Sim result 2.</figcaption>
           </figure>
 
-          <figure class="media-card">
+          <figure class="media-card media-card-irsim">
             <img
               src="static/images/irsim3.gif"
               alt="IR-Sim simulation result 3"
               loading="lazy"
             >
-            <figcaption class="media-caption">IR-Sim result 3.</figcaption>
           </figure>
 
-          <figure class="media-card">
+          <figure class="media-card media-card-irsim">
             <img
               src="static/images/irsim4.gif"
               alt="IR-Sim simulation result 4"
               loading="lazy"
             >
-            <figcaption class="media-caption">IR-Sim result 4.</figcaption>
           </figure>
 
-          <figure class="media-card">
+          <figure class="media-card media-card-irsim">
             <img
               src="static/images/irsim5.gif"
               alt="IR-Sim simulation result 5"
               loading="lazy"
             >
-            <figcaption class="media-caption">IR-Sim result 5.</figcaption>
           </figure>
 
-          <figure class="media-card">
+          <figure class="media-card media-card-irsim">
             <img
               src="static/images/irsim6.gif"
               alt="IR-Sim simulation result 6"
               loading="lazy"
             >
-            <figcaption class="media-caption">IR-Sim result 6.</figcaption>
           </figure>
         </div>
 
-        <figure class="media-card media-card-large">
-          <img
-            src="static/images/GMN.gif"
-            alt="Gazebo simulation GIF"
-            loading="lazy"
-          >
-          <figcaption class="media-caption">Gazebo simulation GIF.</figcaption>
-        </figure>
+        <div class="media-grid media-grid-two media-grid-gazebo">
+          <figure class="media-card media-card-gazebo">
+            <img
+              src="static/images/gazebo1.gif"
+              alt="Gazebo simulation result 1"
+              loading="lazy"
+            >
+          </figure>
+
+          <figure class="media-card media-card-gazebo">
+            <img
+              src="static/images/gazebo2.gif"
+              alt="Gazebo simulation result 2"
+              loading="lazy"
+            >
+          </figure>
+        </div>
+
       </div>
     </div>
   </div>
@@ -242,22 +246,6 @@
 </section>
 <!-- End real-world experiments -->
 
-<!-- Teaser video -->
-<section class="hero teaser">
-  <div class="container is-fluid">
-    <div class="hero-body">
-      <div class="teaser-gif-wrap">
-        <img
-          class="teaser-gif"
-          src="static/images/GMN.gif"
-          alt="Generalizing Mapless Navigation teaser"
-          loading="lazy"
-        >
-      </div>
-    </div>
-  </div>
-</section>
-<!-- End teaser media -->
   </main>
 
   </body>
