@@ -402,7 +402,7 @@ body {
 
 .media-figure-irsim img {
   width: 100%;
-  min-height: 280px;
+  min-height: 185px;
   object-fit: cover;
   border-radius: var(--border-radius-lg);
   box-shadow: var(--shadow-lg);
@@ -422,7 +422,23 @@ body {
 
 .media-figure-gazebo img {
   width: 100%;
-  min-height: 460px;
+  min-height: 610px;
+  object-fit: cover;
+  border-radius: var(--border-radius-lg);
+  box-shadow: var(--shadow-lg);
+}
+
+.media-grid-realworld {
+  grid-template-columns: 1fr;
+  gap: 1.75rem;
+  max-width: 920px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.media-figure-realworld img {
+  width: 100%;
+  min-height: 340px;
   object-fit: cover;
   border-radius: var(--border-radius-lg);
   box-shadow: var(--shadow-lg);
@@ -748,6 +764,10 @@ code {
   }
 
   .media-figure-gazebo img {
+    min-height: auto;
+  }
+
+  .media-figure-realworld img {
     min-height: auto;
   }
 }
