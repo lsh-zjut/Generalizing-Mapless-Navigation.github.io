@@ -455,6 +455,21 @@ body {
   box-shadow: var(--shadow-lg);
 }
 
+.experiment-media-pair {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1.25rem;
+}
+
+.experiment-media-item {
+  min-width: 0;
+}
+
+.experiment-media-caption {
+  margin-top: 0.6rem;
+  font-weight: 600;
+}
+
 /* Footer Improvements */
 .footer {
   background: var(--background-secondary);
@@ -780,6 +795,10 @@ code {
 
   .media-figure-realworld img {
     min-height: auto;
+  }
+
+  .experiment-media-pair {
+    grid-template-columns: 1fr;
   }
 }
 
