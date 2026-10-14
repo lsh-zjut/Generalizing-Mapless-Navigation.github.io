@@ -17,7 +17,7 @@
       <div class="container is-max-desktop">
         <div class="columns is-centered">
           <div class="column has-text-centered">
-            <h1 class="title is-1 publication-title">Generalizing Mapless Navigation: Achieving Robust Obstacle Avoidance Using General Navigation Models</h1>
+            <h1 class="title is-1 publication-title">Topological-Image-Guided Navigation: Achieving Robust Obstacle Avoidance Using General Navigation Models</h1>
             <div class="is-size-5 publication-authors">
               <span class="author-block">
                 <span>Shuhang Liu</span><sup>†</sup>,</span>
@@ -84,7 +84,7 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-           While pretrained visual navigation models provide useful waypoint guidance for mapless navigation, their outputs are often coarse and geometry agnostic. In particular, they do not explicitly account for local obstacles, robot motion constraints, or command feasibility. To bridge this gap, this paper proposes a hierarchical modular navigation framework that combines a general navigation model with physically grounded local planning. The framework contains three core components. (1) A hierarchical architecture connects visual waypoint prediction with physical execution. (2) A waypoint-conditioned local execution interface connects visual guidance based on position alone to local planning for the target robot. The local planner converts each waypoint into a target heading, applies LiDAR feasibility checks using the robot footprint, and scores feasible commands for progress and continuity. (3) Simulation and real robot experiments across multiple platforms evaluate the framework using matched comparisons with local planners. The complete system uses an RGB topological map prepared for each route. Topological localization against this map provides route progress. Local execution does not require a metric map, metric pose estimate, or SLAM pose graph. Extensive evaluations across IR-Sim, Gazebo, and real world platforms show encouraging improvements in the tested navigation tasks. The results indicate that waypoint guidance, local geometry, and robot motion constraints can be connected through a modular interface for practical deployment.
+           While pretrained visual navigation models provide useful waypoint guidance, their outputs are often coarse and geometry agnostic. In particular, they do not explicitly account for local obstacles, robot motion constraints, or command feasibility. To bridge this gap, this paper proposes a hierarchical modular navigation framework under topological visual guidance that combines a general navigation model with physically grounded local planning. The framework contains three core components. (1) A hierarchical architecture connects visual waypoint prediction with physical execution. (2) A waypoint-conditioned interface bridges position-only visual guidance and local planning by deriving target headings, enforcing footprint-aware LiDAR feasibility, and optimizing commands for progress and continuity. (3) We evaluate the proposed framework through extensive simulation and real-world experiments across diverse robotic platforms, benchmarking it against established local planners. The complete system is guided by an ordered sequence of RGB topological keyframe images prepared for each route, with topological localization providing route progress. Local execution does not require a metric map, metric pose estimate, or SLAM pose graph. Extensive evaluations across IR-Sim, Gazebo, and real world platforms show encouraging improvements in the tested navigation tasks. The results indicate that waypoint guidance, local geometry, and robot motion constraints can be connected through a modular interface for practical deployment.
           </p>
         </div>
       </div>
@@ -113,7 +113,7 @@
 
         <div class="content has-text-justified">
           <ul class="contribution-list">
-            <li>A hierarchical navigation framework is developed to connect vision-based waypoint guidance with physically grounded local planning for mapless navigation without prior environmental maps.</li>
+            <li>A hierarchical navigation framework is developed to connect visual waypoint guidance with local execution that does not require a metric map. The complete system uses an RGB topological map and topological localization for route progress.</li>
             <li>A waypoint-conditioned local execution interface connects visual guidance based on position alone to local planning for the target robot. The local planner converts each waypoint into a target heading, applies LiDAR feasibility checks using the robot footprint, and scores feasible commands for progress and continuity.</li>
             <li>Simulation and real-world experiments across multiple platforms are conducted to evaluate the framework in obstacle avoidance tasks and to analyze its performance against traditional local planners under matched deployment settings.</li>
           </ul>
@@ -267,6 +267,15 @@
               </div>
             </div>
             <figcaption class="media-caption experiment-caption">Humanoid Experiment</figcaption>
+          </figure>
+
+          <figure class="media-figure media-figure-realworld">
+            <img
+              src="static/images/hm3d-video.gif"
+              alt="Humanoid robot HM3D experiment"
+              loading="lazy"
+            >
+            <figcaption class="media-caption experiment-caption">HM3D Experiment</figcaption>
           </figure>
         </div>
       </div>
